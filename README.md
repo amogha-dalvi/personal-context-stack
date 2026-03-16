@@ -45,20 +45,40 @@ The content engine has two modes:
 
 ## Install
 
+### As a plugin (recommended)
+
 ```bash
-git clone https://github.com/YOUR_USERNAME/personal-context-stack.git
+git clone https://github.com/amogha-dalvi/personal-context-stack.git
+claude --plugin-dir ./personal-context-stack
+```
+
+Skills are available as `/pcs:<skill-name>`:
+
+```
+/pcs:discover-person
+/pcs:defining-icp-segmentation
+/pcs:conducting-customer-research
+/pcs:building-positioning-messaging
+/pcs:building-persona-context
+/pcs:running-content-engine
+```
+
+### As standalone skills
+
+```bash
+git clone https://github.com/amogha-dalvi/personal-context-stack.git
 cd personal-context-stack
 ./install.sh
 ```
 
-This symlinks all six skills into `~/.claude/skills/`. Requires [Claude Code](https://claude.ai/claude-code).
+This symlinks all six skills into `~/.claude/skills/`, making them available directly as `/discover-person`, `/defining-icp-segmentation`, etc.
 
 ## Usage
 
 Start a Claude Code session and run:
 
 ```
-/discover-person
+/pcs:discover-person
 ```
 
 Work through the sequence. Each skill will tell you when it needs an upstream skill to run first.
@@ -66,9 +86,9 @@ Work through the sequence. Each skill will tell you when it needs an upstream sk
 You can also invoke any skill directly if the required memory files already exist:
 
 ```
-/running-content-engine          # if all upstream context is built
-/building-persona-context        # to refresh entity map or active context
-/building-positioning-messaging  # to sharpen positioning after new research
+/pcs:running-content-engine          # if all upstream context is built
+/pcs:building-persona-context        # to refresh entity map or active context
+/pcs:building-positioning-messaging  # to sharpen positioning after new research
 ```
 
 ## Updating context

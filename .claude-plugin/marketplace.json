@@ -1,0 +1,27 @@
+{
+  "name": "personal-context-stack",
+  "owner": {
+    "name": "Amogha"
+  },
+  "metadata": {
+    "description": "A sequential skill system that builds structured context about a person — from identity through audience, positioning, and entity mapping to content production. 6 interview-driven skills, each producing memory artifacts that feed the next.",
+    "version": "1.0.0",
+    "repository": "https://github.com/amogha-dalvi/personal-context-stack"
+  },
+  "plugins": [
+    {
+      "name": "pcs",
+      "description": "Sequential context-building system for individuals: discover who someone is, define their audience, research what that audience cares about, build positioning and voice, map their entity graph and active context, then plan and produce content. Each skill is a conversation that produces memory artifacts feeding the next.",
+      "source": "./",
+      "strict": false,
+      "skills": [
+        "./skills/0-discover-person",
+        "./skills/1-defining-icp-segmentation",
+        "./skills/2-conducting-customer-research",
+        "./skills/3-building-positioning-messaging",
+        "./skills/4-building-persona-context",
+        "./skills/5-running-content-engine"
+      ]
+    }
+  ]
+}
