@@ -1,0 +1,2 @@
+install.sh linguist-vendored
+*.md linguist-documentation=false
