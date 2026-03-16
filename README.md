@@ -1,8 +1,19 @@
 # Personal Context Stack
 
-A sequential skill system for [Claude Code](https://claude.ai/claude-code) that builds structured context about a person — from "the AI knows nothing about me" to "the AI produces content that sounds like me and lands with my audience."
+A sequential skill system for [Claude Code](https://claude.ai/claude-code) that builds structured context about a person — from "the AI knows nothing about me" to "the AI produces content that sounds like me." 
 
-AI content fails because of missing context, not missing capability. This system builds that context in the right order.
+AI content fails because of missing context, not missing capability. This system builds that context in the right order for an individual. 
+
+The stack covers this context about an individual across 5 major components. This serves as a personal branding setup skills. 
+
+Each skill produces a **memory ** artifact that feeds the next. By the time you reach the content engine, the AI has:
+
+- Your throughline, beliefs, and credibility
+- A sharp profile of who you serve and who you don't
+- Your audience's worldview, language, objections, and buying patterns
+- Your positioning, core narrative, awareness-level messages, and voice
+- A graph of every entity in your world and how they connect
+- A timeline of what you've said, what's live, and what's next
 
 ## The sequence
 
@@ -14,15 +25,6 @@ AI content fails because of missing context, not missing capability. This system
 4. building-persona-context        → Entity map + active context
 5. running-content-engine          → Plan then produce
 ```
-
-Each skill produces a memory artifact that feeds the next. By the time you reach the content engine, the AI has:
-
-- Your throughline, beliefs, and credibility
-- A sharp profile of who you serve and who you don't
-- Your audience's worldview, language, objections, and buying patterns
-- Your positioning, core narrative, awareness-level messages, and voice
-- A graph of every entity in your world and how they connect
-- A timeline of what you've said, what's live, and what's next
 
 ## What each skill does
 
